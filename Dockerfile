@@ -1,0 +1,1 @@
+FROM python:3.12.2# set environment variablesENV PYTHONDONTWRITEBYTECODE 1ENV PYTHONUNBUFFERED 1RUN mkdir /codeWORKDIR /code# install dependenciesRUN pip install --upgrade pipCOPY requirements/ /code/requirements/RUN pip install -r requirements/dev.txtCOPY . /code/EXPOSE 8000CMD ["python", "manage.py", "runserver"]

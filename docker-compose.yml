@@ -1,1 +1,1 @@
-version: '3'services:  api:    image: 
+version: '3.8'services:  cfour_backend_dev:    build: .    container_name: cfour_backend_develop    ports:      - "8000:8000"    environment:      - DEBUG=True      - PYTHONDONTWRITEBYTECODE=1      - PYTHONUNBUFFERED=1    command: [ "python", "manage.py", "runserver", "0.0.0.0:8000" ]    volumes:      - .:/code    networks:      - cfour_networknetworks:  cfour_network:    external: true

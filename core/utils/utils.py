@@ -1,0 +1,1 @@
+from random import randintdef create_random_otp():    return str(randint(a=1000, b=9999))

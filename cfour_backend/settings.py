@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+ACCESS_TOKEN_LIFETIME = ACCESS_TOKEN_LIFETIME
+REFRESH_TOKEN_LIFETIME = REFRESH_TOKEN_LIFETIME
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +42,20 @@ INSTALLED_APPS = [
 
     'rest_framework',
 ]
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient"
+        }
+    }
+}
+
+EXPIRATION_TIMES = EXPIRATION_TIMES
+
+NO_MORE_TRY = NO_MORE_TRY
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

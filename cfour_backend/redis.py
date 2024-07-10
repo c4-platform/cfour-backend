@@ -1,0 +1,1 @@
+from redis import Redisfrom environments import REDIS_HOST, REDIS_PORT, REDIS_USERNAME, REDIS_PASSWORDREDIS_CONNECTION = Redis(host=REDIS_HOST, port=REDIS_PORT, username=REDIS_USERNAME, password=REDIS_PASSWORD, db=0,                         decode_responses=True)

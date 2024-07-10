@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54490660-a5c0-4e68-b258-eb48aeb0f696" name="Changes" comment="removed venv">
-      <change afterPath="$PROJECT_DIR$/gunicorn_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/authentication.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cfour_backend/redis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/actions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/actions/messages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/utils/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cfour_backend/environments.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfour_backend/environments.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfour_backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfour_backend/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +52,7 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;account&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/mohammad/Desktop/novin-system/lexico-backend&quot;
   }
 }</component>

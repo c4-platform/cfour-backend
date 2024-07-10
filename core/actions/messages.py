@@ -1,0 +1,1 @@
+class BaseSMS:    def send(self):        passclass VerificationSMS(BaseSMS):    def __init__(self, message, receptor):        self.message = message        self.receptor = receptor

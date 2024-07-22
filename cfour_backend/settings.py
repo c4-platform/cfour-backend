@@ -36,8 +36,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'rest_framework',
+    'core',
+    'games'
 ]
 
 MIDDLEWARE = [
@@ -101,6 +102,28 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+MINIO_ACCESS = MINIO_ACCESS
+MINIO_SECRET = MINIO_SECRET
+MINIO_BUCKET_NAME = MINIO_BUCKET_NAME
+MINIO_ENDPOINT_URL = MINIO_ENDPOINT_URL
+
+STORAGES = {
+    "default": {
+        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
+        "OPTIONS": {
+            "bucket_name": MINIO_BUCKET_NAME,
+            "endpoint_url": MINIO_ENDPOINT_URL,
+            "access_key": MINIO_ACCESS,
+            "secret_key": MINIO_SECRET,
+            "querystring_auth": True,
+        },
+    },
+
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/

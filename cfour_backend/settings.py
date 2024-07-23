@@ -36,9 +36,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework_swagger',
     'rest_framework',
+    'drf_yasg',
+    'drf_yasg2',
     'core',
-    'games'
+    'games',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -116,7 +120,9 @@ STORAGES = {
             "endpoint_url": MINIO_ENDPOINT_URL,
             "access_key": MINIO_ACCESS,
             "secret_key": MINIO_SECRET,
-            "querystring_auth": True,
+            "querystring_auth": True
+            # "use_ssl": True,
+            # "verify": False,
         },
     },
 

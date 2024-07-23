@@ -15,4 +15,4 @@ class File(models.Model):
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
         self.file_name = self.file.name
         self.file_url = default_storage.url(self.file.name)
-        return super().save(update_fields=['file_name', 'file_url'])
+        return super().save()

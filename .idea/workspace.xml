@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54490660-a5c0-4e68-b258-eb48aeb0f696" name="Changes" comment="removed venv">
-      <change afterPath="$PROJECT_DIR$/games/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/games/urls.py" afterDir="false" />
+    <list default="true" id="54490660-a5c0-4e68-b258-eb48aeb0f696" name="Changes" comment="Added core application for file model. &#10;Added minio into storage settings. &#10;Updated Game model.&#10;Added game serializer list and create.&#10;Added list of games view.">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfour_backend/environments.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfour_backend/environments.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cfour_backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfour_backend/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cfour_backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfour_backend/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/games/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/games/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +53,8 @@
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "games",
-    "last_opened_file_path": "/home/mohammad/Desktop/novin-system/lexico-backend"
+    "last_opened_file_path": "/home/mohammad/Desktop/novin-system/lexico-backend",
+    "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
   <component name="RecentsManager">
